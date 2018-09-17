@@ -23,11 +23,11 @@ class HomeScreen extends React.Component {
         <Button
           onPress={() => navigation.navigate("MyModal")}
           title="Info"
-          color="#fff"
+          color="#f0f"
         />
       ),
       headerRight: (
-        <Button onPress={params.increaseCount} title="+1" color="#fff" />
+        <Button onPress={params.increaseCount} title="+1" color="#f00" />
       )
     };
   };

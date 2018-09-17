@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { Button, Text, View, Image } from "react-native";
+import { Button, Text, View, Image, Platform } from "react-native";
 import {
   createStackNavigator,
-  createBottomTabNavigator
+  createBottomTabNavigator,
+  createMaterialTopTabNavigator,
+  TabBarBottom
 } from "react-navigation";
 import Explore from "./Explore";
 import Details from "./Details";
@@ -14,12 +16,7 @@ const HomeStack = createStackNavigator(
   },
   {
     navigationOptions: {
-      headerTitle: (
-        <Image
-          source={require("./spiro.png")}
-          style={{ width: 30, height: 30 }}
-        />
-      )
+      header: null
     }
   }
 );
@@ -28,7 +25,31 @@ const SettingsStack = createStackNavigator({
   Settings: { screen: Settings },
   Details: { screen: Details }
 });
-const MenuBar = createBottomTabNavigator(
+const MenuBarAndroid = createMaterialTopTabNavigator(
+  {
+    Explore: { screen: Explore },
+    Settings: { screen: Settings }
+  },
+  {
+    initialRouteName: "Explore",
+    navigationOptions: {
+      tabBarColor: "white"
+    },
+    tabBarPosition: "top",
+
+    tabBarOptions: {
+      activeTintColor: "#000",
+      inactiveTintColor: "gray",
+      style: {
+        backgroundColor: "#fff"
+      },
+      indicatorStyle: {
+        backgroundColor: "#000"
+      }
+    }
+  }
+);
+const MenuBarIos = createBottomTabNavigator(
   {
     Explore: { screen: HomeStack },
     Settings: { screen: SettingsStack }
@@ -50,15 +71,23 @@ const MenuBar = createBottomTabNavigator(
         //return
       }
     }),
+    tabBarPosition: "top",
     tabBarOptions: {
-      activeTintColor: "tomato",
+      activeTintColor: "white",
       inactiveTintColor: "gray"
     }
   }
 );
 class Navigation extends Component {
+  renderMenu() {
+    if (Platform.OS === "ios") {
+      return <MenuBarIos />;
+    } else {
+      return <MenuBarAndroid />;
+    }
+  }
   render() {
-    return <MenuBar />;
+    return <View style={{ flex: 1 }}>{this.renderMenu()}</View>;
   }
 }
 
