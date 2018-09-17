@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Text, View } from "react-native";
+import { Button, Text, View, Image } from "react-native";
 import {
   createStackNavigator,
   createBottomTabNavigator
@@ -7,10 +7,22 @@ import {
 import Explore from "./Explore";
 import Details from "./Details";
 import Settings from "./Settings";
-const HomeStack = createStackNavigator({
-  Explore: { screen: Explore },
-  Details: { screen: Details }
-});
+const HomeStack = createStackNavigator(
+  {
+    Explore: { screen: Explore },
+    Details: { screen: Details }
+  },
+  {
+    navigationOptions: {
+      headerTitle: (
+        <Image
+          source={require("./spiro.png")}
+          style={{ width: 30, height: 30 }}
+        />
+      )
+    }
+  }
+);
 
 const SettingsStack = createStackNavigator({
   Settings: { screen: Settings },
@@ -22,6 +34,7 @@ const MenuBar = createBottomTabNavigator(
     Settings: { screen: SettingsStack }
   },
   {
+    initialRouteName: "Explore",
     navigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, tintColor }) => {
         const { routeName } = navigation.state;
@@ -34,7 +47,7 @@ const MenuBar = createBottomTabNavigator(
 
         // You can return any component that you like here! We usually use an
         // icon component from react-native-vector-icons
-        //return <Ionicons name={iconName} size={25} color={tintColor} />;
+        //return
       }
     }),
     tabBarOptions: {
