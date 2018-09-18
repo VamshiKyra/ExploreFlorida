@@ -9,6 +9,9 @@ import {
 import Explore from "./Explore";
 import Details from "./Details";
 import Settings from "./Settings";
+import Activities from "./Activities";
+import Info from "./Info";
+import Favorties from "./Favorities";
 const HomeStack = createStackNavigator(
   {
     Explore: { screen: Explore },
@@ -21,14 +24,13 @@ const HomeStack = createStackNavigator(
   }
 );
 
-const SettingsStack = createStackNavigator({
-  Settings: { screen: Settings },
-  Details: { screen: Details }
-});
 const MenuBarAndroid = createMaterialTopTabNavigator(
   {
     Explore: { screen: Explore },
-    Settings: { screen: Settings }
+    Activities: { screen: Activities },
+    Favorties: { screen: Favorties },
+    Settings: { screen: Settings },
+    Info: { screen: Info }
   },
   {
     initialRouteName: "Explore",
@@ -49,6 +51,10 @@ const MenuBarAndroid = createMaterialTopTabNavigator(
     }
   }
 );
+const SettingsStack = createStackNavigator({
+  Explore: { screen: MenuBarAndroid },
+  Details: { screen: Details }
+});
 const MenuBarIos = createBottomTabNavigator(
   {
     Explore: { screen: HomeStack },
@@ -83,7 +89,7 @@ class Navigation extends Component {
     if (Platform.OS === "ios") {
       return <MenuBarIos />;
     } else {
-      return <MenuBarAndroid />;
+      return <SettingsStack />;
     }
   }
   render() {

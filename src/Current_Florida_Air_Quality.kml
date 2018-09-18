@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="OGRGeoJSON" id="OGRGeoJSON">
+	<SimpleField name="SITE_ID" type="string"></SimpleField>
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="CMCD_COORDINATE_METHOD_ID" type="string"></SimpleField>
+	<SimpleField name="OOIC_OBJECT_OF_INTEREST_ID" type="string"></SimpleField>
+	<SimpleField name="PPC_POINT_PROXIMITY_ID" type="string"></SimpleField>
+	<SimpleField name="DCD_DATUM_ID" type="string"></SimpleField>
+	<SimpleField name="LONGNAME" type="string"></SimpleField>
+	<SimpleField name="AQI_VALUE" type="int"></SimpleField>
+	<SimpleField name="RESP_POLLUTANT" type="string"></SimpleField>
+	<SimpleField name="AQI_CATEGORY" type="string"></SimpleField>
+	<SimpleField name="O3_HIGHEST_1HR" type="int"></SimpleField>
+	<SimpleField name="O3_HIGHEST_8HR" type="int"></SimpleField>
+	<SimpleField name="PM25_DAILY_AVG" type="string"></SimpleField>
+	<SimpleField name="CO_HIGHEST_1HR" type="string"></SimpleField>
+	<SimpleField name="CO_HIGHEST_8HR" type="string"></SimpleField>
+	<SimpleField name="NO2_HIGHEST_1HR" type="string"></SimpleField>
+	<SimpleField name="PM10_DAILY_AVG" type="string"></SimpleField>
+	<SimpleField name="SO2_HIGHEST_1HR" type="string"></SimpleField>
+	<SimpleField name="SO2_DAILY_AVG" type="string"></SimpleField>
+	<SimpleField name="O3_1HR_AQI" type="int"></SimpleField>
+	<SimpleField name="O3_8HR_AQI" type="int"></SimpleField>
+	<SimpleField name="PM25_DAILY_AQI" type="string"></SimpleField>
+	<SimpleField name="CO_1HR_AQI" type="string"></SimpleField>
+	<SimpleField name="CO_8HR_AQI" type="string"></SimpleField>
+	<SimpleField name="NO2_1HR_AQI" type="string"></SimpleField>
+	<SimpleField name="PM10_DAILY_AQI" type="string"></SimpleField>
+	<SimpleField name="SO2_1HR_AQI" type="string"></SimpleField>
+	<SimpleField name="SO2_DAILY_AQI" type="string"></SimpleField>
+	<SimpleField name="HOURLY_DETAIL_URL" type="string"></SimpleField>
+	<SimpleField name="HISTORICAL_DATA_URL" type="string"></SimpleField>
+</Schema>
+<Folder><name>OGRGeoJSON</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120013012</SimpleData>
+		<SimpleData name="OBJECTID">230180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Paynes Prairie Farm  (formerly 001-3011)</SimpleData>
+		<SimpleData name="AQI_VALUE">25</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">33</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">27</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">25</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120013012&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.266114513813392,29.56611667518013</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120030002</SimpleData>
+		<SimpleData name="OBJECTID">58180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Osceola National Forest</SimpleData>
+		<SimpleData name="AQI_VALUE">24</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">30</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">26</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">24</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120030002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.441114588653321,30.20111681878889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120050006</SimpleData>
+		<SimpleData name="OBJECTID">17180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">St. Andrews State Park</SimpleData>
+		<SimpleData name="AQI_VALUE">33</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">46</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">36</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.700000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">33</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">32</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120050006&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-85.731393305701644,30.130561147405587</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120090007</SimpleData>
+		<SimpleData name="OBJECTID">52180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Melbourne</SimpleData>
+		<SimpleData name="AQI_VALUE">20</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">14</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">13</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.700000</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">7.700000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">12</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">20</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">7</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120090007&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.628613984325469,28.053616355216455</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120094001</SimpleData>
+		<SimpleData name="OBJECTID">18180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Cocoa Beach</SimpleData>
+		<SimpleData name="AQI_VALUE">21</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">23</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">23</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">21</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120094001&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.615280655842497,28.310838640327933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120110033</SimpleData>
+		<SimpleData name="OBJECTID">1180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">028</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Vista View Park</SimpleData>
+		<SimpleData name="AQI_VALUE">30</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">37</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">32</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">30</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120110033&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.33870207610596,26.073426256762048</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120110034</SimpleData>
+		<SimpleData name="OBJECTID">150180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Daniela Banu (NCore)</SimpleData>
+		<SimpleData name="AQI_VALUE">26</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">32</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">28</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">3.200000</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.200000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">-0.103000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">26</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">13</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">2</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120110034&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.25694715111014,26.053893644645516</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120110035</SimpleData>
+		<SimpleData name="OBJECTID">221180913</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Fort Lauderdale Near Road</SimpleData>
+		<SimpleData name="AQI_VALUE">33</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.800000</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.700000</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">33</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">8</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120110035&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120112003</SimpleData>
+		<SimpleData name="OBJECTID">20180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Pompano Highlands Fire House</SimpleData>
+		<SimpleData name="AQI_VALUE">28</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">34</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">30</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">28</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120112003&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.096669332406918,26.290838152727488</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120118002</SimpleData>
+		<SimpleData name="OBJECTID">21180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Dr. Von Mizell-Eula Johnson State Park</SimpleData>
+		<SimpleData name="AQI_VALUE">23</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">27</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">25</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">23</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120118002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.111391553447888,26.088060323565223</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120170006</SimpleData>
+		<SimpleData name="OBJECTID">147180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Crystal River Preserve</SimpleData>
+		<SimpleData name="AQI_VALUE">26</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.200000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.800000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">26</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120170006&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.642930256533802,28.958888122672452</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120210004</SimpleData>
+		<SimpleData name="OBJECTID">75180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">021</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Laurel Oak Elementary</SimpleData>
+		<SimpleData name="AQI_VALUE">36</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">47</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">39</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.400000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">36</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">31</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120210004&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.710684791116122,26.27036533229202</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120230002</SimpleData>
+		<SimpleData name="OBJECTID">44180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Lake City - Veterans Domicile</SimpleData>
+		<SimpleData name="AQI_VALUE">26</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">36</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">28</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.100000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">26</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">25</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120230002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.619170193986179,30.178061252794222</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310032</SimpleData>
+		<SimpleData name="OBJECTID">231180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Kooker Park</SimpleData>
+		<SimpleData name="AQI_VALUE">15</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">3.500000</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">14.200000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">1.200000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">15</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">13</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">1</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310032&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.63528102687286,30.356394654953114</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310077</SimpleData>
+		<SimpleData name="OBJECTID">7180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Sheffield Elementary</SimpleData>
+		<SimpleData name="AQI_VALUE">20</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">23</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">22</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">2.900000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">20</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">12</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310077&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.587225461402795,30.477783573524235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310081</SimpleData>
+		<SimpleData name="OBJECTID">233180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Cedar Bay STP</SimpleData>
+		<SimpleData name="AQI_VALUE">1</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.700000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">1</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">1</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310081&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.620836580980537,30.422505782609171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310098</SimpleData>
+		<SimpleData name="OBJECTID">61180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">015</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Mandarin</SimpleData>
+		<SimpleData name="AQI_VALUE">4</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">0.900000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">4</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310098&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.633892128739276,30.135839048586007</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310100</SimpleData>
+		<SimpleData name="OBJECTID">8180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">028</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Mayo Clinic</SimpleData>
+		<SimpleData name="AQI_VALUE">19</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">23</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">21</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.400000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">19</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">18</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310100&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.453614303314822,30.260283528015549</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310106</SimpleData>
+		<SimpleData name="OBJECTID">159180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Cisco Drive</SimpleData>
+		<SimpleData name="AQI_VALUE">25</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">30</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">27</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">25</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310106&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.840836643357292,30.378339100031468</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120310108</SimpleData>
+		<SimpleData name="OBJECTID">124180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">104</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Pepsi Place (PP-PPL)</SimpleData>
+		<SimpleData name="AQI_VALUE">14</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">3.400000</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.600000</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">13.100000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">14</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">7</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">12</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120310108&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.6069476811535,30.262783522885083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120330004</SimpleData>
+		<SimpleData name="OBJECTID">9180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Ellyson Industrial Park</SimpleData>
+		<SimpleData name="AQI_VALUE">29</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">34</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">31</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">3.900000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.800000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">29</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">16</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120330004&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-87.2036159578129,30.525283410502155</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120330018</SimpleData>
+		<SimpleData name="OBJECTID">10180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Pensacola NAS</SimpleData>
+		<SimpleData name="AQI_VALUE">31</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">37</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">33</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">31</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120330018&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-87.270838191958902,30.368061152377795</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120350004</SimpleData>
+		<SimpleData name="OBJECTID">130180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Flagler</SimpleData>
+		<SimpleData name="AQI_VALUE">20</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">24</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">22</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">20</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120350004&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.276947556557076,29.489172239766763</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120470015</SimpleData>
+		<SimpleData name="OBJECTID">153180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">White Springs</SimpleData>
+		<SimpleData name="AQI_VALUE">30</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.200000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.300000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">30</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120470015&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.794725811043506,30.426394637525615</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120550003</SimpleData>
+		<SimpleData name="OBJECTID">11180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Archbold Biological Station</SimpleData>
+		<SimpleData name="AQI_VALUE">27</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">31</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">29</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">27</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120550003&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.340117524176407,27.189499849371714</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120570081</SimpleData>
+		<SimpleData name="OBJECTID">57180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">E.G. Simmons Park - #113</SimpleData>
+		<SimpleData name="AQI_VALUE">39</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">50</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">42</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">39</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120570081&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.465148823091738,27.740315929637969</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120570083</SimpleData>
+		<SimpleData name="OBJECTID">121180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Gardinier Park</SimpleData>
+		<SimpleData name="AQI_VALUE">18</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 10</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">19.200000</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">18</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120570083&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.384035246121698,27.864478433114314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120570109</SimpleData>
+		<SimpleData name="OBJECTID">146180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">East Bay</SimpleData>
+		<SimpleData name="AQI_VALUE">0</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">1-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.700000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120570109&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.383479684153926,27.856978678333828</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120570112</SimpleData>
+		<SimpleData name="OBJECTID">225180913</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Apollo Beach</SimpleData>
+		<SimpleData name="AQI_VALUE">28</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.600000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">4.500000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">28</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">6</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120570112&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.4197256079228,27.779727355003367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120570113</SimpleData>
+		<SimpleData name="OBJECTID">222180913</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Munro Street</SimpleData>
+		<SimpleData name="AQI_VALUE">6</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR CO</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.500000</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">6</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120570113&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.469447849141915,27.955005173735074</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120571035</SimpleData>
+		<SimpleData name="OBJECTID">42180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Davis Island</SimpleData>
+		<SimpleData name="AQI_VALUE">44</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">55</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">47</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">15.200000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">44</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">14</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120571035&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.45431495726794,27.928643063555469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120571065</SimpleData>
+		<SimpleData name="OBJECTID">13180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">USMC Reserve Center (Gandy)</SimpleData>
+		<SimpleData name="AQI_VALUE">46</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">64</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">50</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.200000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">46</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">26</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120571065&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.538206286891793,27.892810981527671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120573002</SimpleData>
+		<SimpleData name="OBJECTID">50180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Sydney</SimpleData>
+		<SimpleData name="AQI_VALUE">41</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">50</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">44</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.600000</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.200000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.320000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">41</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">19</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">2</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120573002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.230281114169486,27.965560737592199</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120590004</SimpleData>
+		<SimpleData name="OBJECTID">15180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Bonifay</SimpleData>
+		<SimpleData name="AQI_VALUE">33</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">35</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">31</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.800000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">29</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">33</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120590004&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-85.603893299204401,30.848616867431133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120690002</SimpleData>
+		<SimpleData name="OBJECTID">43180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Clermont</SimpleData>
+		<SimpleData name="AQI_VALUE">27</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">32</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">29</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">27</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120690002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.723336541720059,28.523894218583845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120710005</SimpleData>
+		<SimpleData name="OBJECTID">157180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Winkler Pump Station</SimpleData>
+		<SimpleData name="AQI_VALUE">18</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.300000</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">17.300000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">18</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">16</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120710005&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.877780971256598,26.601949300915919</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120712002</SimpleData>
+		<SimpleData name="OBJECTID">51180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Rotary Park</SimpleData>
+		<SimpleData name="AQI_VALUE">38</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">47</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">41</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">38</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120712002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.985136625381841,26.548689202869802</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120713002</SimpleData>
+		<SimpleData name="OBJECTID">2180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Bay Oaks Park</SimpleData>
+		<SimpleData name="AQI_VALUE">39</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">45</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">42</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">39</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120713002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.939024335481577,26.449525947499694</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120730012</SimpleData>
+		<SimpleData name="OBJECTID">3180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Tallahassee Community College</SimpleData>
+		<SimpleData name="AQI_VALUE">32</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">37</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">30</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.600000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">28</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">32</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120730012&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.346392924002728,30.439727926886995</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120810028</SimpleData>
+		<SimpleData name="OBJECTID">123180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Port Manatee DEP</SimpleData>
+		<SimpleData name="AQI_VALUE">3</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">1-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">2.600000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">1</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">3</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">1</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120810028&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.547503417932433,27.637782872181479</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120813002</SimpleData>
+		<SimpleData name="OBJECTID">69180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Port Manatee</SimpleData>
+		<SimpleData name="AQI_VALUE">37</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">48</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">40</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">37</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120813002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.545836750456431,27.633060649557493</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120814012</SimpleData>
+		<SimpleData name="OBJECTID">54180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">012</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">GT Bray Park</SimpleData>
+		<SimpleData name="AQI_VALUE">43</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">63</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">46</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">43</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120814012&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.618614544074987,27.48083838802803</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120814013</SimpleData>
+		<SimpleData name="OBJECTID">71180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">012</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">39th Street Park</SimpleData>
+		<SimpleData name="AQI_VALUE">40</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">63</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">43</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">40</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120814013&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.521947848845102,27.449727271655167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120830003</SimpleData>
+		<SimpleData name="OBJECTID">4180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Ocala - YMCA</SimpleData>
+		<SimpleData name="AQI_VALUE">19</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">25</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">21</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.600000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">19</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">19</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120830003&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.094725560863054,29.17139436335431</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120830004</SimpleData>
+		<SimpleData name="OBJECTID">40180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Marion County Sheriff</SimpleData>
+		<SimpleData name="AQI_VALUE">22</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">28</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">24</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">22</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120830004&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.173058916855325,29.192783255594339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120850007</SimpleData>
+		<SimpleData name="OBJECTID">196180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">019</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Stuart</SimpleData>
+		<SimpleData name="AQI_VALUE">28</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">37</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">30</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.500000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">28</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">27</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120850007&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.240558288379418,27.172505036366172</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120860019</SimpleData>
+		<SimpleData name="OBJECTID">212180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Pennsuco (DOT Miami)</SimpleData>
+		<SimpleData name="AQI_VALUE">0</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">1-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.600000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120860019&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.382592468541262,25.899543625241712</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120860027</SimpleData>
+		<SimpleData name="OBJECTID">22180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Rosenstiel (University of Miami)</SimpleData>
+		<SimpleData name="AQI_VALUE">23</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">28</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">25</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">23</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120860027&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.161947114919741,25.732504676548544</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120860029</SimpleData>
+		<SimpleData name="OBJECTID">23180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Perdue</SimpleData>
+		<SimpleData name="AQI_VALUE">20</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">28</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">22</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">20</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120860029&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.326113825408143,25.58694908057678</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120860034</SimpleData>
+		<SimpleData name="OBJECTID">194180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Kendall</SimpleData>
+		<SimpleData name="AQI_VALUE">27</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.500000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">27</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120860034&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120860035</SimpleData>
+		<SimpleData name="OBJECTID">235180913</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Perimeter Near-road</SimpleData>
+		<SimpleData name="AQI_VALUE">-999</SimpleData>
+		<SimpleData name="AQI_CATEGORY">NO AQI AVAILABLE</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120860035&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.284169373878271,25.785560242999686</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120861016</SimpleData>
+		<SimpleData name="OBJECTID">76180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Miami Fire Station</SimpleData>
+		<SimpleData name="AQI_VALUE">25</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">5.900000</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">16.400000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">25</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">15</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120861016&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.215558242863963,25.794726913240343</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120864002</SimpleData>
+		<SimpleData name="OBJECTID">195180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Lab Annex</SimpleData>
+		<SimpleData name="AQI_VALUE">8</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR CO</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.700000</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">8</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120864002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.210280463493191,25.798338025203595</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120866001</SimpleData>
+		<SimpleData name="OBJECTID">38180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Homestead Fire Station</SimpleData>
+		<SimpleData name="AQI_VALUE">38</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">9.200000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">38</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120866001&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.482780535215184,25.471949048366604</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120890005</SimpleData>
+		<SimpleData name="OBJECTID">199180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">FBWWTP</SimpleData>
+		<SimpleData name="AQI_VALUE">9</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">1-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">6.500000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">2</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">9</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">3</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120890005&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.463058766492608,30.658616953099173</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120890010</SimpleData>
+		<SimpleData name="OBJECTID">201180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">023</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Yulee</SimpleData>
+		<SimpleData name="AQI_VALUE">18</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.200000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">18</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120890010&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.535673456202517,30.627170528871062</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120910002</SimpleData>
+		<SimpleData name="OBJECTID">158180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Fort Walton Beach</SimpleData>
+		<SimpleData name="AQI_VALUE">25</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">30</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">27</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">10.700000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">25</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">10</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120910002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-86.666115802916664,30.426672294604817</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120950008</SimpleData>
+		<SimpleData name="OBJECTID">5180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Winegard Elementary School</SimpleData>
+		<SimpleData name="AQI_VALUE">20</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">24</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">22</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">20</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120950008&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.381114216847621,28.45444976673814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120952002</SimpleData>
+		<SimpleData name="OBJECTID">55180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Winter Park</SimpleData>
+		<SimpleData name="AQI_VALUE">21</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">24</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">23</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">-999</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.800000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">1</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">21</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">-999</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">-999</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">1</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120952002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.362503105656671,28.596394245991284</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120972002</SimpleData>
+		<SimpleData name="OBJECTID">62180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Osceola Co. Fire Station</SimpleData>
+		<SimpleData name="AQI_VALUE">29</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">35</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">31</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">29</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120972002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.636235423227177,28.347795299799301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120990008</SimpleData>
+		<SimpleData name="OBJECTID">156180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Belle Glade</SimpleData>
+		<SimpleData name="AQI_VALUE">48</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 2.5</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">11.400000</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">48</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120990008&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.666391733848656,26.724727137590172</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">120990021</SimpleData>
+		<SimpleData name="OBJECTID">214180913</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Lantana Preserve</SimpleData>
+		<SimpleData name="AQI_VALUE">22</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">28</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">24</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">22</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=120990021&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.058613773900959,26.593893785547351</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121010005</SimpleData>
+		<SimpleData name="OBJECTID">24180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">018</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">San Antonio</SimpleData>
+		<SimpleData name="AQI_VALUE">29</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">37</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">31</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">29</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121010005&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.305558925409571,28.332227490809789</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121012001</SimpleData>
+		<SimpleData name="OBJECTID">73180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Holiday</SimpleData>
+		<SimpleData name="AQI_VALUE">34</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">41</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">37</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">34</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121012001&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.756392384774088,28.195560779627652</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121030004</SimpleData>
+		<SimpleData name="OBJECTID">59180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">St. Petersburg College</SimpleData>
+		<SimpleData name="AQI_VALUE">41</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">54</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">44</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">41</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121030004&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.731670147019813,27.946671831748095</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121030018</SimpleData>
+		<SimpleData name="OBJECTID">77180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Azalea Park</SimpleData>
+		<SimpleData name="AQI_VALUE">43</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">58</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">46</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">43</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121030018&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.740003478089264,27.785838458959926</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121030023</SimpleData>
+		<SimpleData name="OBJECTID">118180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Derby Lane</SimpleData>
+		<SimpleData name="AQI_VALUE">3</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">1-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">2</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">1</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">3</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">1</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121030023&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.623059001807974,27.863616258222329</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121030027</SimpleData>
+		<SimpleData name="OBJECTID">227180913</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Sawgrass Lake Park</SimpleData>
+		<SimpleData name="AQI_VALUE">3</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR CO</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.300000</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">3</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121030027&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.665281235307233,27.834449584058206</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121032008</SimpleData>
+		<SimpleData name="OBJECTID">119180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD27</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Gateway</SimpleData>
+		<SimpleData name="AQI_VALUE">3</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR CO</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="CO_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="CO_HIGHEST_8HR">0.300000</SimpleData>
+		<SimpleData name="CO_1HR_AQI">-999</SimpleData>
+		<SimpleData name="CO_8HR_AQI">3</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121032008&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.680154790309828,27.893088878781441</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121035002</SimpleData>
+		<SimpleData name="OBJECTID">25180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">John Chesnut Sr. Park - East Lake</SimpleData>
+		<SimpleData name="AQI_VALUE">32</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">41</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">35</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">7.300000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">32</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">30</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121035002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.700836809614643,28.090282977688204</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121035003</SimpleData>
+		<SimpleData name="OBJECTID">120180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">012</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Oakwood</SimpleData>
+		<SimpleData name="AQI_VALUE">1</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">1-HOUR SO2</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">1</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">1</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">1</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">1</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121035003&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.739725711115369,28.141671877967369</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121056005</SimpleData>
+		<SimpleData name="OBJECTID">26180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Sikes Elementary School</SimpleData>
+		<SimpleData name="AQI_VALUE">32</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">41</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">35</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">0.700000</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">1</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">32</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">0</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">1</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121056005&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.000003268766321,27.939727403738825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121056006</SimpleData>
+		<SimpleData name="OBJECTID">27180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Baptist Children's Home</SimpleData>
+		<SimpleData name="AQI_VALUE">33</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">42</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">36</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.400000</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">10.700000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">33</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">18</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">10</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121056006&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.972225485805396,28.028894092670328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121071008</SimpleData>
+		<SimpleData name="OBJECTID">200180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Palatka Barge Port</SimpleData>
+		<SimpleData name="AQI_VALUE">15</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">24-HOUR PM 10</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">16.100000</SimpleData>
+		<SimpleData name="SO2_HIGHEST_1HR">1</SimpleData>
+		<SimpleData name="SO2_DAILY_AVG">0</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">15</SimpleData>
+		<SimpleData name="SO2_1HR_AQI">1</SimpleData>
+		<SimpleData name="SO2_DAILY_AQI">0</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121071008&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.656392118853532,29.687783386448384</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121110013</SimpleData>
+		<SimpleData name="OBJECTID">126180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Savannas</SimpleData>
+		<SimpleData name="AQI_VALUE">25</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">27</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">27</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">25</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121110013&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.311113871021533,27.389171755017713</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121130015</SimpleData>
+		<SimpleData name="OBJECTID">80180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">WGS84</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">103</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Woodlawn Beach Middle School</SimpleData>
+		<SimpleData name="AQI_VALUE">27</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">31</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">29</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">4.700000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">27</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">20</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121130015&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-87.008060342543629,30.394172277139351</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121151005</SimpleData>
+		<SimpleData name="OBJECTID">63180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Lido Park</SimpleData>
+		<SimpleData name="AQI_VALUE">44</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">61</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">48</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">44</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121151005&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.570281191985956,27.307227236003218</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121151006</SimpleData>
+		<SimpleData name="OBJECTID">68180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">021</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Paw Park</SimpleData>
+		<SimpleData name="AQI_VALUE">38</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">57</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">41</SimpleData>
+		<SimpleData name="NO2_HIGHEST_1HR">-999</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">11.900000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">38</SimpleData>
+		<SimpleData name="NO2_1HR_AQI">-999</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">11</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121151006&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.479725611528536,27.350282804383269</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121152002</SimpleData>
+		<SimpleData name="OBJECTID">79180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">NAD83</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">028</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Jackson Road</SimpleData>
+		<SimpleData name="AQI_VALUE">33</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">42</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">36</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">6.100000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">33</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">25</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121152002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.362503347213618,27.089171631853869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121171002</SimpleData>
+		<SimpleData name="OBJECTID">70180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Sanford</SimpleData>
+		<SimpleData name="AQI_VALUE">21</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">25</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">23</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">3.600000</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">10.100000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">21</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">15</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">9</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121171002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.310558651191158,28.746116505717534</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="SITE_ID">121275002</SimpleData>
+		<SimpleData name="OBJECTID">47180913</SimpleData>
+		<SimpleData name="CMCD_COORDINATE_METHOD_ID">UNKNOWN</SimpleData>
+		<SimpleData name="OOIC_OBJECT_OF_INTEREST_ID">027</SimpleData>
+		<SimpleData name="DCD_DATUM_ID">NAD83</SimpleData>
+		<SimpleData name="LONGNAME">Daytona - Blind Services</SimpleData>
+		<SimpleData name="AQI_VALUE">19</SimpleData>
+		<SimpleData name="RESP_POLLUTANT">8-HOUR OZONE</SimpleData>
+		<SimpleData name="AQI_CATEGORY">GOOD</SimpleData>
+		<SimpleData name="O3_HIGHEST_1HR">24</SimpleData>
+		<SimpleData name="O3_HIGHEST_8HR">21</SimpleData>
+		<SimpleData name="PM25_DAILY_AVG">3.800000</SimpleData>
+		<SimpleData name="PM10_DAILY_AVG">10.700000</SimpleData>
+		<SimpleData name="O3_1HR_AQI">-999</SimpleData>
+		<SimpleData name="O3_8HR_AQI">19</SimpleData>
+		<SimpleData name="PM25_DAILY_AQI">16</SimpleData>
+		<SimpleData name="PM10_DAILY_AQI">10</SimpleData>
+		<SimpleData name="HOURLY_DETAIL_URL">http://prodenv.dep.state.fl.us/DarmSaqs/hourlyDetailReport.action?siteId=121275002&amp;displayDate=09/13/2018</SimpleData>
+		<SimpleData name="HISTORICAL_DATA_URL">http://prodenv.dep.state.fl.us/DarmSaqs/userQueryReport.action</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.052503035811668,29.2066721778809</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

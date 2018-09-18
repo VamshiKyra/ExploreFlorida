@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
+
       android:name=".MainApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
@@ -21,6 +22,8 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+              <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAG0un7aC0wlXgp5sAVWhAigBSttEMPLbg"/>
     </application>
 
 </manifest>
