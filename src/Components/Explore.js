@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MapView, { PROVIDER_GOOGLE, Marker, Callout } from "react-native-maps";
 import { AppRegistry, StyleSheet, Dimensions, Text, View } from "react-native";
 import Geojson from "react-native-geojson";
+import { StackActions, NavigationActions } from "react-navigation";
 import axios from "axios";
 import Details from "./Details";
 
@@ -19,7 +20,10 @@ const alcatraz = {
   features: [
     {
       type: "Feature",
-      properties: {},
+      properties: {
+        title: "Title can be created",
+        description: "description can also be created"
+      },
       geometry: {
         type: "Point",
         coordinates: [-122.42305755615234, 37.82687023785448]
@@ -53,14 +57,20 @@ class Explore extends Component {
       });
   }
 
-  //   renderGeo() {
-  //     return ;
-  //   }
   onClickDetails = details => {
     <Details details={details} />;
   };
   render() {
     const { data, fetched } = this.state;
+    // const resetAction = StackActions.reset({
+    //   index: 0,
+    //   actions: [
+    //     NavigationActions.navigate({
+    //       routeName: "Menu"
+    //     })
+    //   ]
+    // });
+    // this.props.navigation.dispatch(resetAction);
     return (
       <View style={{ flex: 1 }}>
         <MapView
@@ -68,6 +78,7 @@ class Explore extends Component {
             this.map = ref;
           }}
           showsUserLocation
+          provider={PROVIDER_GOOGLE}
           style={{ ...StyleSheet.absoluteFillObject }}
           region={{
             latitude: 30.400197,
@@ -76,7 +87,8 @@ class Explore extends Component {
             longitudeDelta: 0.0121
           }}
         >
-          {data.features.map(mark => {
+          <Geojson geojson={alcatraz} title="Hello" description="description" />
+          {/* {data.features.map(mark => {
             if (mark.geometry) {
               if (
                 mark.geometry.coordinates[0] &&
@@ -111,7 +123,7 @@ class Explore extends Component {
                 );
               }
             }
-          })}
+          })} */}
         </MapView>
       </View>
     );

@@ -51,45 +51,47 @@ const MenuBarAndroid = createMaterialTopTabNavigator(
     }
   }
 );
-const SettingsStack = createStackNavigator({
-  Explore: { screen: MenuBarAndroid },
-  Details: { screen: Details }
-});
+
 const MenuBarIos = createBottomTabNavigator(
   {
-    Explore: { screen: HomeStack },
-    Settings: { screen: SettingsStack }
+    Explore: { screen: Explore },
+    Activities: { screen: Activities },
+    Favorties: { screen: Favorties },
+    Settings: { screen: Settings },
+    Info: { screen: Info }
   },
   {
     initialRouteName: "Explore",
-    navigationOptions: ({ navigation }) => ({
-      tabBarIcon: ({ focused, tintColor }) => {
-        const { routeName } = navigation.state;
-        let iconName;
-        if (routeName === "Home") {
-          iconName = `ios-information-circle${focused ? "" : "-outline"}`;
-        } else if (routeName === "Settings") {
-          iconName = `ios-options${focused ? "" : "-outline"}`;
-        }
-
-        // You can return any component that you like here! We usually use an
-        // icon component from react-native-vector-icons
-        //return
-      }
-    }),
+    navigationOptions: {
+      tabBarColor: "white"
+    },
     tabBarPosition: "top",
     tabBarOptions: {
-      activeTintColor: "white",
-      inactiveTintColor: "gray"
+      activeTintColor: "#000",
+      inactiveTintColor: "gray",
+      style: {
+        backgroundColor: "#fff"
+      },
+      indicatorStyle: {
+        backgroundColor: "#000"
+      }
     }
   }
 );
+const SettingsStackAndroid = createStackNavigator({
+  Explore: { screen: MenuBarAndroid },
+  Details: { screen: Details }
+});
+const SettingsStackIos = createStackNavigator({
+  Explore: { screen: MenuBarIos },
+  Details: { screen: Details }
+});
 class Navigation extends Component {
   renderMenu() {
     if (Platform.OS === "ios") {
-      return <MenuBarIos />;
+      return <SettingsStackIos />;
     } else {
-      return <SettingsStack />;
+      return <SettingsStackAndroid />;
     }
   }
   render() {
