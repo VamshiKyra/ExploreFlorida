@@ -8,6 +8,19 @@ class Details extends Component {
       params: {}
     };
   }
+  static navigationOptions = {
+    title: "Details",
+    headerStyle: { backgroundColor: "black" },
+    headerTintColor: "white",
+    headerTitleStyle: {
+      fontSize: 16,
+      fontWeight: "normal",
+      justifyContent: "center",
+      alignSelf: "center",
+      width: "35%"
+    },
+    backTitle: ""
+  };
   componentDidMount() {
     console.log(this.props.navigation);
     if (this.props.navigation) {

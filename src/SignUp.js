@@ -110,7 +110,9 @@ class SignUp extends Component {
           </View>
 
           <View style={styles.footerContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate("Login")}
+            >
               <View style={styles.signup}>
                 <Text style={styles.whiteFont}>Join</Text>
               </View>

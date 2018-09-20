@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
-
+import Icon from "react-native-vector-icons/Ionicons";
 class Settings extends Component {
   static navigationOptions = {
-    title: "Settings"
+    title: "Settings",
+    tabBarIcon: <Icon name="ios-settings" size={25} color="#000" />
   };
   render() {
     return (
