@@ -1,17 +1,25 @@
 import React, { Component } from "react";
 import MapView, { PROVIDER_GOOGLE, Marker, Callout } from "react-native-maps";
 import Icon from "react-native-vector-icons/Entypo";
-import { AppRegistry, StyleSheet, Dimensions, Text, View } from "react-native";
+import { SearchBar } from "react-native-elements";
+import {
+  AppRegistry,
+  StyleSheet,
+  Dimensions,
+  Text,
+  View,
+  TextInput,
+  ScrollView
+} from "react-native";
 import Geojson from "react-native-geojson";
 import { StackActions, NavigationActions } from "react-navigation";
+import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import axios from "axios";
 import Details from "./Details";
 
 const { width, height } = Dimensions.get("window");
 
 const ASPECT_RATIO = width / height;
-const LATITUDE = -18.9193508;
-const LONGITUDE = -48.2830592;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
@@ -108,6 +116,12 @@ const alcatraz1 = {
     }
   ]
 };
+const default_region = {
+  latitude: 36.400144,
+  longitude: -80.232523,
+  latitudeDelta: LATITUDE_DELTA,
+  longitudeDelta: LONGITUDE_DELTA
+};
 class Explore extends Component {
   constructor(props) {
     super(props);
@@ -116,22 +130,26 @@ class Explore extends Component {
         type: "",
         features: []
       },
+      region: default_region,
+      initialPosition: true,
       fetched: false,
-      latitude: 30.400144,
-      longitude: -84.232523,
-      latitudeDelta: LATITUDE_DELTA,
-      longitudeDelta: LONGITUDE_DELTA,
       error: null
     };
   }
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       position => {
-        this.setState({
-          latitude: parseFloat(position.coords.latitude),
-          longitude: parseFloat(position.coords.longitude),
-          error: null
-        });
+        if (this.state.initialPosition) {
+          this.setState({
+            region: {
+              latitude: parseFloat(position.coords.latitude),
+              longitude: parseFloat(position.coords.longitude),
+              latitudeDelta: LATITUDE_DELTA,
+              longitudeDelta: LONGITUDE_DELTA
+            },
+            initialPosition: false
+          });
+        }
       },
       error => this.setState({ error: error.message }),
       {
@@ -144,8 +162,6 @@ class Explore extends Component {
     this.watchId = navigator.geolocation.watchPosition(
       position => {
         this.setState({
-          // latitude: parseFloat(position.coords.latitude),
-          // longitude: parseFloat(position.coords.longitude),
           error: null
         });
       },
@@ -178,7 +194,7 @@ class Explore extends Component {
   render() {
     const { data, fetched } = this.state;
     return (
-      <View style={{ flex: 1 }}>
+      <View style={styles.container}>
         <MapView
           ref={ref => {
             this.map = ref;
@@ -188,19 +204,11 @@ class Explore extends Component {
           showsScale={true}
           showsTraffic={true}
           zoomEnabled={true}
-          style={{
-            ...StyleSheet.absoluteFillObject,
-            padding: 1,
-            marginLeft: 0
-          }}
+          zoomControlEnabled={true}
+          style={styles.map}
           showsMyLocationButton={true}
           showsPointsOfInterest={true}
-          region={{
-            latitude: this.state.latitude,
-            longitude: this.state.longitude,
-            latitudeDelta: this.state.latitudeDelta,
-            longitudeDelta: this.state.longitudeDelta
-          }}
+          region={this.state.region}
         >
           {/* <Geojson geojson={alcatraz} title="Hello" description="description" /> */}
           {data.features.map(mark => {
@@ -240,9 +248,58 @@ class Explore extends Component {
             }
           })}
         </MapView>
+        <View style={styles.search_field_container}>
+          <GooglePlacesAutocomplete
+            placeholder="Search"
+            minLength={3} // minimum length of text to search
+            autoFocus={false}
+            returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
+            listViewDisplayed="true" // true/false/undefined
+            query={{
+              key: "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU",
+              language: "en"
+            }}
+            debounce={200}
+          />
+          {/* <ScrollView>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+          </ScrollView> */}
+        </View>
       </View>
     );
   }
 }
-
+const styles = StyleSheet.create({
+  container: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    justifyContent: "flex-end",
+    alignItems: "center"
+  },
+  map: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0
+  },
+  search_field_container: {
+    height: 150,
+    width: width,
+    position: "absolute",
+    top: 0
+  },
+  input_container: {
+    alignSelf: "center",
+    backgroundColor: "#FFF",
+    opacity: 0.8,
+    marginBottom: 25
+  }
+});
 export default Explore;

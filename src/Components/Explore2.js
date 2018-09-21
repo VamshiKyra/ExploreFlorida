@@ -116,3 +116,87 @@ const styles = StyleSheet.create({
 });
 
 export default Explore;
+<GooglePlacesAutocomplete
+  placeholder="Search"
+  minLength={3} // minimum length of text to search
+  autoFocus={false}
+  returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
+  listViewDisplayed="auto" // true/false/undefined
+  fetchDetails={true}
+  renderDescription={row => row.description} // custom description render
+  onPress={(data, details = null) => {
+    // 'details' is provided when fetchDetails = true
+    console.log(data, details);
+  }}
+  getDefaultValue={() => ""}
+  query={{
+    key: "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU",
+    language: "en"
+  }}
+  styles={{
+    container: {
+      flex: 0.1
+    },
+    textInputContainer: {
+      width: "100%"
+    },
+    description: {
+      fontWeight: "bold"
+    },
+    predefinedPlacesDescription: {
+      color: "#1faadb"
+    },
+    poweredContainer: {
+      opacity: 0
+    }
+  }}
+  currentLocation={true} // Will add a 'Current location' button at the top of the predefined places list
+  currentLocationLabel="Current location"
+  nearbyPlacesAPI="GooglePlacesSearch" // Which API to use: GoogleReverseGeocoding or GooglePlacesSearch
+  GooglePlacesSearchQuery={{
+    rankby: "distance"
+  }}
+  debounce={200}
+/>;
+          <GooglePlacesAutocomplete
+          placeholder="Search"
+          minLength={3} // minimum length of text to search
+          autoFocus={false}
+          returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
+          listViewDisplayed="auto" // true/false/undefined
+          fetchDetails={true}
+          renderDescription={row => row.description} // custom description render
+          onPress={(data, details = null) => {
+            // 'details' is provided when fetchDetails = true
+            console.log(data, details);
+          }}
+          getDefaultValue={() => ""}
+          query={{
+            key: "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU",
+            language: "en"
+          }}
+          styles={{
+            container: {
+              flex: 0.1
+            },
+            textInputContainer: {
+              width: "100%"
+            },
+            description: {
+              fontWeight: "bold"
+            },
+            predefinedPlacesDescription: {
+              color: "#1faadb"
+            },
+            poweredContainer: {
+              opacity: 0
+            }
+          }}
+          currentLocation={true} // Will add a 'Current location' button at the top of the predefined places list
+          currentLocationLabel="Current location"
+          nearbyPlacesAPI="GooglePlacesSearch" // Which API to use: GoogleReverseGeocoding or GooglePlacesSearch
+          GooglePlacesSearchQuery={{
+            rankby: "distance"
+          }}
+          debounce={200}
+        >

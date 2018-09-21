@@ -22,7 +22,6 @@ class Details extends Component {
     backTitle: ""
   };
   componentDidMount() {
-    console.log(this.props.navigation);
     if (this.props.navigation) {
       this.setState({ params: this.props.navigation.state.params });
     }
@@ -37,7 +36,6 @@ class Details extends Component {
         </View>
         <Text>{title}</Text>
         <Text>{description}</Text>
-        {console.log(this.state.params)}
       </View>
     );
   }

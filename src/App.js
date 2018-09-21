@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Router from "./Router";
+import { View } from "react-native";
 import { Platform, PermissionsAndroid } from "react-native";
 
 class App extends Component {
@@ -27,7 +28,11 @@ class App extends Component {
     }
   }
   render() {
-    return <Router />;
+    return (
+      <View style={{ flex: 1, paddingTop: 20 }}>
+        <Router />
+      </View>
+    );
   }
 }
 export default App;

@@ -130,6 +130,7 @@ const SettingsStackIos = createStackNavigator(
   },
   {
     navigationOptions: {
+      //   header: null
       headerTitleStyle: {
         color: "white",
         fontSize: 20,
