@@ -255,9 +255,22 @@ class Explore extends Component {
             autoFocus={false}
             returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
             listViewDisplayed="true" // true/false/undefined
+            enablePoweredByContainer={false}
             query={{
               key: "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU",
               language: "en"
+            }}
+            styles={{
+              poweredContainer: {
+                opacity: 0
+              },
+              height: "20%",
+              textInputContainer: {
+                width: "100%"
+              },
+              predefinedPlacesDescription: {
+                color: "#1faadb"
+              }
             }}
             debounce={200}
           />
