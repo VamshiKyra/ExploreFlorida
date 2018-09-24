@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
-
+import firebase from "react-native-firebase/auth";
 class Details extends Component {
   constructor(props) {
     super(props);
