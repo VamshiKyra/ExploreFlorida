@@ -16,13 +16,13 @@ import { StackActions, NavigationActions } from "react-navigation";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import axios from "axios";
 import Details from "./Details";
+import { green } from "../../node_modules/ansi-colors";
 
 const { width, height } = Dimensions.get("window");
-
 const ASPECT_RATIO = width / height;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
-
+const GOOGLE_APIKEY = "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU";
 const getReady = false;
 const alcatraz = {
   type: "FeatureCollection",
@@ -130,12 +130,24 @@ class Explore extends Component {
         type: "",
         features: []
       },
+      defaultAddress: "",
       region: default_region,
       initialPosition: true,
+      findAddress: false,
       fetched: false,
-      error: null
+      error: null,
+      LatLng: {
+        latitude: "",
+        longitude: ""
+      },
+      markerStatus: false,
+      searchMarkerDescription: ""
     };
   }
+  static navigationOptions = {
+    title: "Explore",
+    tabBarIcon: <Icon name="map" size={25} color="#000" />
+  };
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       position => {
@@ -149,6 +161,7 @@ class Explore extends Component {
             },
             initialPosition: false
           });
+          this._presentAddress();
         }
       },
       error => this.setState({ error: error.message }),
@@ -159,6 +172,7 @@ class Explore extends Component {
         distanceFilter: 10
       }
     );
+
     this.watchId = navigator.geolocation.watchPosition(
       position => {
         this.setState({
@@ -185,12 +199,90 @@ class Explore extends Component {
       });
   }
   componentWillMount() {
+    //this._presentAddress();
     navigator.geolocation.clearWatch(this.watchId);
   }
-  static navigationOptions = {
-    title: "Explore",
-    tabBarIcon: <Icon name="map" size={25} color="#000" />
-  };
+  _presentAddress() {
+    console.log("present address");
+    console.log(this.state.region.latitude);
+    axios
+      .get(
+        "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
+          this.state.region.latitude +
+          "," +
+          this.state.region.longitude +
+          "&key=" +
+          GOOGLE_APIKEY,
+        {}
+      )
+      .then(res => {
+        console.log(res.data.results[0].formatted_address);
+        if (res.data.results && res.data.results.length > 0) {
+          this.setState({
+            defaultAddress: res.data.results[0].formatted_address,
+            findAddress: true
+          });
+          console.log(this.state.defaultAddress);
+        }
+      })
+      .catch(e => console.log(e));
+  }
+  _addressSearch(searchString) {
+    if (searchString.length > 0) {
+      axios
+        .get(
+          "https://maps.googleapis.com/maps/api/geocode/json?address=" +
+            searchString +
+            "&key=" +
+            GOOGLE_APIKEY,
+          {}
+        )
+        .then(res => {
+          if (res.data.results && res.data.results.length > 0) {
+            var lat = res.data.results[0].geometry.location.lat;
+            var lng = res.data.results[0].geometry.location.lng;
+            var LatLng = {
+              latitude: lat,
+              longitude: lng
+            };
+            console.log(res.data.results[0]);
+            var region = {
+              latitude: lat,
+              longitude: lng,
+              latitudeDelta: LATITUDE_DELTA + 0.1,
+              longitudeDelta: LONGITUDE_DELTA + 0.1
+            };
+            this.setState({
+              region,
+              LatLng,
+              markerStatus: true,
+              searchMarkerDescription: res.data.results[0].formatted_address
+            });
+          }
+        })
+        .catch(e => console.log(e));
+    }
+  }
+  _placeMarker(details) {
+    console.log(details);
+    var LatLng = {
+      latitude: details.geometry.location.lat,
+      longitude: details.geometry.location.lng
+    };
+    const region = {
+      latitude: details.geometry.location.lat,
+      longitude: details.geometry.location.lng,
+      latitudeDelta: LATITUDE_DELTA,
+      longitudeDelta: LONGITUDE_DELTA
+    };
+
+    this.setState({
+      region,
+      LatLng,
+      markerStatus: true,
+      searchMarkerDescription: details.formatted_address
+    });
+  }
   render() {
     const { data, fetched } = this.state;
     return (
@@ -202,12 +294,11 @@ class Explore extends Component {
           showsUserLocation
           provider={PROVIDER_GOOGLE}
           showsScale={true}
-          showsTraffic={true}
           zoomEnabled={true}
           zoomControlEnabled={true}
           style={styles.map}
+          showsCompass={true}
           showsMyLocationButton={true}
-          showsPointsOfInterest={true}
           region={this.state.region}
         >
           {/* <Geojson geojson={alcatraz} title="Hello" description="description" /> */}
@@ -247,39 +338,78 @@ class Explore extends Component {
               }
             }
           })}
+          {this.state.markerStatus && (
+            <Marker
+              key={1}
+              pinColor="#2ECCFA"
+              coordinate={this.state.LatLng}
+              title={this.state.searchMarkerDescription}
+            />
+          )}
         </MapView>
         <View style={styles.search_field_container}>
           <GooglePlacesAutocomplete
             placeholder="Search"
-            minLength={3} // minimum length of text to search
+            minLength={2} // minimum length of text to search
             autoFocus={false}
             returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
             listViewDisplayed="true" // true/false/undefined
             enablePoweredByContainer={false}
+            fetchDetails={true}
+            //defaultText={this.state.defaultAddress}
+            onPress={(data, details = null) => {
+              // 'details' is provided when fetchDetails = true
+              this._placeMarker(details);
+              //this._addressSearch(details.description);
+            }}
+            //submitDefault={this.state.defaultAddress}
+            // getDefaultValue={() => {
+            //   console.log(this.state.defaultAddress);
+            //   return this.state.defaultAddress;
+            // }}
             query={{
-              key: "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU",
+              key: GOOGLE_APIKEY,
               language: "en"
             }}
+            getDefaultValue={"this.state.defaultAddress"}
             styles={{
               poweredContainer: {
                 opacity: 0
               },
-              height: "20%",
               textInputContainer: {
-                width: "100%"
+                width: "100%",
+                height: "20%"
+              },
+              textInput: {
+                height: "70%"
               },
               predefinedPlacesDescription: {
                 color: "#1faadb"
               }
             }}
+            onSubmitEditing={event => {
+              console.log(event.nativeEvent.text);
+              this._addressSearch(event.nativeEvent.text);
+            }}
+            renderDescription={row => row.description}
+            textInputProps={{
+              onChangeText: text => {
+                this.setState({ defaultAddress: text });
+                if (text.length === 0) {
+                  console.log("text cleared");
+                  const LatLng = {
+                    latitude: "",
+                    longitude: ""
+                  };
+                  this.setState({
+                    LatLng,
+                    markerStatus: false
+                  });
+                }
+              }
+            }}
             debounce={200}
           />
-          {/* <ScrollView>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-          </ScrollView> */}
         </View>
       </View>
     );
