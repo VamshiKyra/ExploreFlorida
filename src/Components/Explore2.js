@@ -200,3 +200,66 @@ export default Explore;
 //   }}
 //   debounce={200}
 // >
+          {/* <GooglePlacesAutocomplete
+            placeholder="Search"
+            minLength={2} // minimum length of text to search
+            autoFocus={false}
+            returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
+            listViewDisplayed="true" // true/false/undefined
+            enablePoweredByContainer={false}
+            fetchDetails={true}
+            //defaultText={this.state.defaultAddress}
+            onPress={(data, details = null) => {
+              // 'details' is provided when fetchDetails = true
+              this._placeMarker(details);
+              //this._addressSearch(details.description);
+            }}
+            //submitDefault={this.state.defaultAddress}
+            // getDefaultValue={() => {
+            //   console.log(this.state.defaultAddress);
+            //   return this.state.defaultAddress;
+            // }}
+            query={{
+              key: GOOGLE_APIKEY,
+              language: "en"
+            }}
+            getDefaultValue={"this.state.defaultAddress"}
+            styles={{
+              poweredContainer: {
+                opacity: 0
+              },
+              textInputContainer: {
+                width: "100%",
+                height: "20%"
+              },
+              textInput: {
+                height: "70%"
+              },
+              predefinedPlacesDescription: {
+                color: "#1faadb"
+              }
+            }}
+            onSubmitEditing={event => {
+              console.log(event.nativeEvent.text);
+              this._addressSearch(event.nativeEvent.text);
+            }}
+            renderDescription={row => row.description}
+            textInputProps={{
+              onChangeText: text => {
+                this.setState({ textinput: text });
+                this._renderAutocomplete(text);
+                if (text.length === 0) {
+                  console.log("text cleared");
+                  const LatLng = {
+                    latitude: "",
+                    longitude: ""
+                  };
+                  this.setState({
+                    LatLng,
+                    markerStatus: false
+                  });
+                }
+              }
+            }}
+            debounce={200}
+          /> */}

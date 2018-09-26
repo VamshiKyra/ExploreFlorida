@@ -15,47 +15,72 @@ import Settings from "./Components/Settings";
 import Activities from "./Components/Activities";
 import Info from "./Components/Info";
 import Favorties from "./Components/Favorities";
-const MenuBarAndroid = createMaterialTopTabNavigator(
-  {
-    Explore: { screen: Explore },
-    Activities: { screen: Activities },
-    Favorties: { screen: Favorties },
-    Settings: { screen: Settings },
-    Info: { screen: Info }
-  },
-  {
-    initialRouteName: "Explore",
-    navigationOptions: {
-      tabBarColor: "white"
-    },
-    tabBarPosition: "top",
-    tabBarOptions: {
-      activeTintColor: "#000",
-      upperCaseLabel: false,
-      showIcon: true,
-      inactiveTintColor: "gray",
-      labelStyle: {
-        fontSize: 9
-      },
-      tabStyle: {
-        height: 60
-      },
-      style: {
-        backgroundColor: "#fff"
-      },
-      indicatorStyle: {
-        backgroundColor: "#000"
-      }
-    }
-  }
-);
+// const MenuBarAndroid = createMaterialTopTabNavigator(
+//   {
+//     Explore: { screen: Explore },
+//     Activities: { screen: Activities },
+//     Favorties: { screen: Favorties },
+//     Settings: { screen: Settings },
+//     Info: { screen: Info }
+//   },
+//   {
+//     initialRouteName: "Explore",
+//     navigationOptions: {
+//       tabBarColor: "white"
+//     },
+//     tabBarPosition: "top",
+//     tabBarOptions: {
+//       activeTintColor: "#000",
+//       upperCaseLabel: false,
+//       showIcon: true,
+//       inactiveTintColor: "gray",
+//       labelStyle: {
+//         fontSize: 9
+//       },
+//       tabStyle: {
+//         height: 60
+//       },
+//       style: {
+//         backgroundColor: "#fff"
+//       },
+//       indicatorStyle: {
+//         backgroundColor: "#000"
+//       }
+//     }
+//   }
+// );
 const MenuBarIos = createBottomTabNavigator(
   {
-    Explore: { screen: Explore },
-    Activities: { screen: Activities },
-    Favorties: { screen: Favorties },
-    Settings: { screen: Settings },
-    Info: { screen: Info }
+    Explore: {
+      screen: Explore,
+      navigationOptions: {
+        headerTitle: "Explore"
+      }
+    },
+    Activities: {
+      screen: Activities,
+      navigationOptions: {
+        headerTitle: "Activities"
+      }
+    },
+    Favorties: {
+      screen: Favorties,
+      navigationOptions: {
+        headerTitle: "Favorties"
+      }
+    },
+    Settings: {
+      screen: Settings,
+      navigationOptions: {
+        headerTitle: "Settings"
+      }
+    },
+    Info: {
+      screen: Info,
+      navigationOptions: {
+        headerTitle: "Info"
+      }
+    }
   },
   {
     initialRouteName: "Explore",
@@ -76,50 +101,47 @@ const MenuBarIos = createBottomTabNavigator(
     }
   }
 );
-const SettingsStackAndroid = createStackNavigator(
-  {
-    Menu: {
-      screen: MenuBarAndroid,
-      navigationOptions: {
-        headerTitle: "Explore Florida"
-      }
-    },
-    Details: {
-      screen: Details,
-      navigationOptions: {
-        headerTitle: "Details"
-      }
-    }
-  },
-  {
-    navigationOptions: {
-      style: {
-        textAlign: "center",
-        alignSelf: "center"
-      },
+// const SettingsStackAndroid = createStackNavigator(
+//   {
+//     Menu: {
+//       screen: MenuBarAndroid,
+//       navigationOptions: {
+//         headerTitle: "Explore Florida"
+//       }
+//     },
+//     Details: {
+//       screen: Details,
+//       navigationOptions: {
+//         headerTitle: "Details"
+//       }
+//     }
+//   },
+//   {
+//     navigationOptions: {
+//       style: {
+//         textAlign: "center",
+//         alignSelf: "center"
+//       },
 
-      headerTitleStyle: {
-        color: "white",
-        textAlign: "center",
-        justifyContent: "center",
-        alignSelf: "center"
-      },
-      headerStyle: {
-        height: 40,
-        textAlign: "justify",
-        backgroundColor: "#1B1B1B",
-        alignContent: "center"
-      }
-    }
-  }
-);
+//       headerTitleStyle: {
+//         color: "white",
+//         textAlign: "center",
+//         justifyContent: "center",
+//         alignSelf: "center"
+//       },
+//       headerStyle: {
+//         height: 40,
+//         textAlign: "justify",
+//         backgroundColor: "#32363A",
+//         alignContent: "center"
+//       }
+//     }
+//   }
+// );
 const SettingsStackIos = createStackNavigator(
   {
     Menu: {
-      screen: MenuBarIos,
-      navigationOptions: {
-        headerTitle: "Explore Florida"
-      }
+      screen: MenuBarIos
     },
     Details: {
       screen: Details,
@@ -130,37 +152,37 @@ const SettingsStackIos = createStackNavigator(
   },
   {
     navigationOptions: {
-      //   header: null
-      headerTitleStyle: {
-        color: "white",
-        fontSize: 20,
-        textAlign: "justify",
-        justifyContent: "space-between",
-        alignContent: "center",
-        paddingLeft: 0,
-        alignSelf: "center"
-      },
-      headerStyle: {
-        height: 40,
-        backgroundColor: "#1B1B1B",
-        alignContent: "center"
-      }
+      header: null
+      // headerTitleStyle: {
+      //   color: "white",
+      //   fontSize: 20,
+      //   textAlign: "justify",
+      //   justifyContent: "space-between",
+      //   alignContent: "center",
+      //   paddingLeft: 0,
+      //   alignSelf: "center"
+      // },
+      // headerStyle: {
+      //   height: 0,
+      //   backgroundColor: "#32363A",
+      //   alignContent: "center"
+      // }
     }
   }
 );
-const LoginStackAndroid = createStackNavigator(
-  {
-    Login: { screen: Login },
-    SignUp: { screen: SignUp },
-    Navigation: { screen: SettingsStackAndroid }
-  },
-  {
-    navigationOptions: {
-      header: null,
-      headerLeft: null
-    }
-  }
-);
+// const LoginStackAndroid = createStackNavigator(
+//   {
+//     Login: { screen: Login },
+//     SignUp: { screen: SignUp },
+//     Navigation: { screen: SettingsStackAndroid }
+//   },
+//   {
+//     navigationOptions: {
+//       header: null,
+//       headerLeft: null
+//     }
+//   }
+// );
 const LoginStackIos = createStackNavigator(
   {
     Login: { screen: Login },
@@ -181,11 +203,7 @@ class Router extends Component {
   }
 
   renderMenu() {
-    if (Platform.OS === "ios") {
-      return <LoginStackIos />;
-    } else {
-      return <LoginStackAndroid />;
-    }
+    return <LoginStackIos />;
   }
   render() {
     return <View style={{ flex: 1 }}>{this.renderMenu()}</View>;

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import MapView, { PROVIDER_GOOGLE, Marker, Callout } from "react-native-maps";
 import Icon from "react-native-vector-icons/Entypo";
-import { SearchBar } from "react-native-elements";
+import MaterialIcon from "react-native-vector-icons/MaterialIcons";
+import { SearchBar, List, ListItem } from "react-native-elements";
 import {
   AppRegistry,
   StyleSheet,
@@ -9,7 +10,11 @@ import {
   Text,
   View,
   TextInput,
-  ScrollView
+  ScrollView,
+  TouchableHighlight,
+  FlatList,
+  Keyboard,
+  TouchableOpacity
 } from "react-native";
 import Geojson from "react-native-geojson";
 import { StackActions, NavigationActions } from "react-navigation";
@@ -17,11 +22,12 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import axios from "axios";
 import Details from "./Details";
 import { green } from "../../node_modules/ansi-colors";
+import Qs from "qs";
 
-const { width, height } = Dimensions.get("window");
-const ASPECT_RATIO = width / height;
+let { width, height } = Dimensions.get("window");
+let ASPECT_RATIO = width / height;
 const LATITUDE_DELTA = 0.0922;
-const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
+let LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 const GOOGLE_APIKEY = "AIzaSyDzICKl_pd87hJVESAiMImhgz08wnNlTxU";
 const getReady = false;
 const alcatraz = {
@@ -130,9 +136,13 @@ class Explore extends Component {
         type: "",
         features: []
       },
+      sampledata: [],
+      googledata: [],
       defaultAddress: "",
+      textinput: "",
       region: default_region,
       initialPosition: true,
+      updateregion: default_region,
       findAddress: false,
       fetched: false,
       error: null,
@@ -143,6 +153,7 @@ class Explore extends Component {
       markerStatus: false,
       searchMarkerDescription: ""
     };
+    this._renderPlaces = this._renderPlaces.bind(this);
   }
   static navigationOptions = {
     title: "Explore",
@@ -152,8 +163,9 @@ class Explore extends Component {
     navigator.geolocation.getCurrentPosition(
       position => {
         if (this.state.initialPosition) {
+          console.log("here");
           this.setState({
-            region: {
+            updateregion: {
               latitude: parseFloat(position.coords.latitude),
               longitude: parseFloat(position.coords.longitude),
               latitudeDelta: LATITUDE_DELTA,
@@ -172,6 +184,7 @@ class Explore extends Component {
         distanceFilter: 10
       }
     );
+    console.log("autocomplete");
 
     this.watchId = navigator.geolocation.watchPosition(
       position => {
@@ -198,8 +211,57 @@ class Explore extends Component {
         console.error(error);
       });
   }
+  renderSeparator = () => {
+    if (this.state.sampledata.length <= 0) {
+      return <View />;
+    } else {
+      return (
+        <View
+          style={{
+            height: 1,
+            width: "86%",
+            backgroundColor: "#CED0CE",
+            marginLeft: "14%"
+          }}
+        />
+      );
+    }
+  };
+  _renderAutocomplete(textinput) {
+    axios
+      .get(
+        "https://maps.googleapis.com/maps/api/place/autocomplete/json?&input=" +
+          textinput +
+          "&" +
+          Qs.stringify({
+            key: GOOGLE_APIKEY,
+            language: "en"
+          })
+      )
+      .then(res => {
+        // console.log(res);
+        this.setState({ googledata: res.data.predictions });
+      })
+      .catch(e => console.log(e));
+    //console.log(this.state.googledata);
+  }
+  _renderSampleData() {
+    console.log("rendersampledata");
+    axios
+      .get("https://randomuser.me/api/?results=5", {})
+      .then(res => {
+        //console.log(res);
+        this.setState({
+          sampledata: [...this.state.sampledata, ...res.data.results]
+        });
+        console.log(this.state.sampledata);
+      })
+      .catch(error => console.log(error));
+    //console.log(this.state.sampledata);
+  }
   componentWillMount() {
     //this._presentAddress();
+    this._renderSampleData();
     navigator.geolocation.clearWatch(this.watchId);
   }
   _presentAddress() {
@@ -208,9 +270,9 @@ class Explore extends Component {
     axios
       .get(
         "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
-          this.state.region.latitude +
+          this.state.updateregion.latitude +
           "," +
-          this.state.region.longitude +
+          this.state.updateregion.longitude +
           "&key=" +
           GOOGLE_APIKEY,
         {}
@@ -219,13 +281,81 @@ class Explore extends Component {
         console.log(res.data.results[0].formatted_address);
         if (res.data.results && res.data.results.length > 0) {
           this.setState({
-            defaultAddress: res.data.results[0].formatted_address,
+            textinput: res.data.results[0].formatted_address,
             findAddress: true
           });
           console.log(this.state.defaultAddress);
         }
       })
       .catch(e => console.log(e));
+  }
+  _myCurrentLocation() {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        console.log("here");
+        this.setState({
+          updateregion: {
+            latitude: parseFloat(position.coords.latitude),
+            longitude: parseFloat(position.coords.longitude),
+            latitudeDelta: LATITUDE_DELTA,
+            longitudeDelta: LONGITUDE_DELTA
+          },
+          initialPosition: false
+        });
+        this._presentAddress();
+      },
+      error => this.setState({ error: error.message }),
+      {
+        enableHighAccuracy: true,
+        timeout: 20000,
+        maximumAge: 1000,
+        distanceFilter: 10
+      }
+    );
+    this._clearMarker();
+  }
+  _getGoogleData(place_id) {
+    axios
+      .get(
+        "https://maps.googleapis.com/maps/api/place/details/json?" +
+          Qs.stringify({
+            key: GOOGLE_APIKEY,
+            placeid: place_id,
+            language: "en"
+          })
+      )
+      .then(res => this._placeMarker(res.data.result))
+      .catch(error => console.log(error));
+  }
+  renderHeader() {
+    return (
+      <SearchBar
+        inputContainerStyle={{ backgroundColor: "white", height: 70 }}
+        clearIcon={
+          <Icon
+            name="cross"
+            size={20}
+            color="#000"
+            //onPress={this._clearMarker()}
+          />
+        }
+        onChangeText={textinput => {
+          console.log(textinput);
+          this.setState({ textinput });
+          this._renderAutocomplete(textinput);
+          if (textinput.length === 0) {
+            this._clearMarker();
+          }
+        }}
+        value={this.state.textinput}
+        placeholder="Search"
+        onSubmitEditing={event => {
+          console.log(event.nativeEvent.text);
+          this.setState({ googledata: [] });
+          this._addressSearch(event.nativeEvent.text);
+        }}
+      />
+    );
   }
   _addressSearch(searchString) {
     if (searchString.length > 0) {
@@ -245,15 +375,15 @@ class Explore extends Component {
               latitude: lat,
               longitude: lng
             };
-            console.log(res.data.results[0]);
-            var region = {
+            //console.log(res.data.results[0]);
+            var updateregion = {
               latitude: lat,
               longitude: lng,
               latitudeDelta: LATITUDE_DELTA + 0.1,
               longitudeDelta: LONGITUDE_DELTA + 0.1
             };
             this.setState({
-              region,
+              updateregion,
               LatLng,
               markerStatus: true,
               searchMarkerDescription: res.data.results[0].formatted_address
@@ -263,13 +393,30 @@ class Explore extends Component {
         .catch(e => console.log(e));
     }
   }
+  _clearMarker() {
+    console.log("this time");
+    this.setState({
+      markerStatus: false,
+      LatLng: {
+        latitude: "",
+        longitude: ""
+      }
+    });
+  }
+  handleInputChange = textinput =>
+    this.setState(state => ({ ...state, textinput: textinput || "" }));
+
+  handleSearchCancel = () => this.handleInputChange("");
+  handleSearchClear = () => {
+    this.handleInputChange("");
+    console.log("new");
+  };
   _placeMarker(details) {
-    console.log(details);
     var LatLng = {
       latitude: details.geometry.location.lat,
       longitude: details.geometry.location.lng
     };
-    const region = {
+    const updateregion = {
       latitude: details.geometry.location.lat,
       longitude: details.geometry.location.lng,
       latitudeDelta: LATITUDE_DELTA,
@@ -277,12 +424,38 @@ class Explore extends Component {
     };
 
     this.setState({
-      region,
+      updateregion,
       LatLng,
       markerStatus: true,
       searchMarkerDescription: details.formatted_address
     });
   }
+  _renderPlaces = places => {
+    console.log(places);
+  };
+  _renderRow = rowData => {
+    return (
+      <ScrollView
+        scrollEnabled={true}
+        contentContainerStyle={{ backgroundColor: "white" }}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps={"always"}
+      >
+        <TouchableHighlight
+          style={{ width }}
+          onPress={() => console.log(rowData)}
+          underlayColor={"#c8c7cc"}
+          keyboardShouldPersistTaps={"always"}
+        >
+          <View keyboardShouldPersistTaps={"always"}>
+            <Text>{rowData}</Text>
+          </View>
+        </TouchableHighlight>
+      </ScrollView>
+    );
+  };
   render() {
     const { data, fetched } = this.state;
     return (
@@ -293,13 +466,9 @@ class Explore extends Component {
           }}
           showsUserLocation
           provider={PROVIDER_GOOGLE}
-          showsScale={true}
-          zoomEnabled={true}
-          zoomControlEnabled={true}
           style={styles.map}
-          showsCompass={true}
-          showsMyLocationButton={true}
-          region={this.state.region}
+          initialRegion={this.state.region}
+          region={this.state.updateregion}
         >
           {/* <Geojson geojson={alcatraz} title="Hello" description="description" /> */}
           {data.features.map(mark => {
@@ -348,69 +517,46 @@ class Explore extends Component {
           )}
         </MapView>
         <View style={styles.search_field_container}>
-          <GooglePlacesAutocomplete
-            placeholder="Search"
-            minLength={2} // minimum length of text to search
-            autoFocus={false}
-            returnKeyType={"search"} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
-            listViewDisplayed="true" // true/false/undefined
-            enablePoweredByContainer={false}
-            fetchDetails={true}
-            //defaultText={this.state.defaultAddress}
-            onPress={(data, details = null) => {
-              // 'details' is provided when fetchDetails = true
-              this._placeMarker(details);
-              //this._addressSearch(details.description);
-            }}
-            //submitDefault={this.state.defaultAddress}
-            // getDefaultValue={() => {
-            //   console.log(this.state.defaultAddress);
-            //   return this.state.defaultAddress;
-            // }}
-            query={{
-              key: GOOGLE_APIKEY,
-              language: "en"
-            }}
-            getDefaultValue={"this.state.defaultAddress"}
-            styles={{
-              poweredContainer: {
-                opacity: 0
-              },
-              textInputContainer: {
-                width: "100%",
-                height: "20%"
-              },
-              textInput: {
-                height: "70%"
-              },
-              predefinedPlacesDescription: {
-                color: "#1faadb"
-              }
-            }}
-            onSubmitEditing={event => {
-              console.log(event.nativeEvent.text);
-              this._addressSearch(event.nativeEvent.text);
-            }}
-            renderDescription={row => row.description}
-            textInputProps={{
-              onChangeText: text => {
-                this.setState({ defaultAddress: text });
-                if (text.length === 0) {
-                  console.log("text cleared");
-                  const LatLng = {
-                    latitude: "",
-                    longitude: ""
-                  };
+          <FlatList
+            style={{ backgroundColor: "white", marginTop: 60 }}
+            data={this.state.googledata}
+            keyboardShouldPersistTaps={"handled"}
+            renderItem={({ item }) => (
+              <ListItem
+                title={`${item.description}`}
+                onPress={() => {
+                  this._renderPlaces(`${item.description}`);
                   this.setState({
-                    LatLng,
-                    markerStatus: false
+                    googledata: [],
+                    textinput: `${item.description}`
                   });
-                }
-              }
-            }}
-            debounce={200}
+                  this._getGoogleData(`${item.place_id}`);
+                  Keyboard.dismiss();
+                }}
+              />
+            )}
+            ListHeaderComponent={this.renderHeader()}
+            keyExtractor={item => item.id}
           />
         </View>
+        <TouchableOpacity
+          style={{
+            borderWidth: 1,
+            borderColor: "rgba(0,0,0,0.2)",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 65,
+            position: "absolute",
+            bottom: 10,
+            right: 10,
+            height: 65,
+            backgroundColor: "#fff",
+            borderRadius: 100
+          }}
+          onPress={() => this._myCurrentLocation()}
+        >
+          <MaterialIcon name="my-location" size={30} color="black" />
+        </TouchableOpacity>
       </View>
     );
   }
@@ -433,16 +579,20 @@ const styles = StyleSheet.create({
     bottom: 0
   },
   search_field_container: {
-    height: 150,
     width: width,
     position: "absolute",
-    top: 0
+    top: -40
   },
   input_container: {
     alignSelf: "center",
     backgroundColor: "#FFF",
     opacity: 0.8,
     marginBottom: 25
+  },
+  row: {
+    padding: 13,
+    height: 48,
+    flexDirection: "row"
   }
 });
 export default Explore;
