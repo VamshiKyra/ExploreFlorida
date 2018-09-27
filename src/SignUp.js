@@ -8,7 +8,7 @@ import {
   TextInput,
   TouchableOpacity
 } from "react-native";
-
+import firebase from "react-native-firebase";
 const background = require("./Img/login1_bg.png");
 const backIcon = require("./Img/back.png");
 const personIcon = require("./Img/login1_person.png");
@@ -17,6 +17,26 @@ const emailIcon = require("./Img/signup_email.png");
 const birthdayIcon = require("./Img/signup_birthday.png");
 
 class SignUp extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      Email: "",
+      Password: "",
+      Name: "",
+      Birthday: "",
+      action: ""
+    };
+  }
+  createUser = () => {
+    firebase
+      .auth()
+      .createUserAndRetrieveDataWithEmailAndPassword(
+        this.state.Email,
+        this.state.Password
+      )
+      .then(this.props.navigation.navigate("Login"))
+      .catch(e => this.setState({ action: e }));
+  };
   render() {
     return (
       <View style={styles.container}>
@@ -58,6 +78,8 @@ class SignUp extends Component {
                 placeholder="Name"
                 placeholderTextColor="#FFF"
                 underlineColorAndroid="transparent"
+                onChangeText={Name => this.setState({ Name })}
+                value={this.state.Name}
               />
             </View>
 
@@ -73,6 +95,8 @@ class SignUp extends Component {
                 style={[styles.input, styles.whiteFont]}
                 placeholder="Email"
                 placeholderTextColor="#FFF"
+                onChangeText={Email => this.setState({ Email })}
+                value={this.state.Email}
               />
             </View>
 
@@ -89,6 +113,8 @@ class SignUp extends Component {
                 style={[styles.input, styles.whiteFont]}
                 placeholder="Password"
                 placeholderTextColor="#FFF"
+                onChangeText={Password => this.setState({ Password })}
+                value={this.state.Password}
               />
             </View>
 
@@ -105,22 +131,23 @@ class SignUp extends Component {
                 placeholder="Birthday"
                 placeholderTextColor="#FFF"
                 underlineColorAndroid="transparent"
+                onChangeText={Birthday => this.setState({ Birthday })}
+                value={this.state.Birthday}
               />
             </View>
           </View>
 
           <View style={styles.footerContainer}>
-            <TouchableOpacity
-              onPress={() => this.props.navigation.navigate("Login")}
-            >
+            <TouchableOpacity onPress={() => this.createUser()}>
               <View style={styles.signup}>
                 <Text style={styles.whiteFont}>Join</Text>
               </View>
             </TouchableOpacity>
-
-            <TouchableOpacity
+            <Text>{this.state.action}</Text>
+            <TouchableOpacity onPress={() => firebase.auth().signOut()}>
+              {/* <TouchableOpacity
               onPress={() => this.props.navigation.navigate("Login")}
-            >
+            > */}
               <View style={styles.signin}>
                 <Text style={styles.greyFont}>
                   Already have an account?

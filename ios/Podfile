@@ -8,12 +8,11 @@ target 'ExploreFlorida' do
 
   # Pods for ExploreFlorida
   react_native_path = "../node_modules/react-native"
-  pod "yoga", :path => "#{react_native_path}/ReactCommon/yoga"
+  pod 'yoga', :path => "#{react_native_path}/ReactCommon/yoga"
   pod 'React', :path => react_native_path, :subspecs => [
     'RCTImage', # Required For React Native 0.45.0+
     'Core',
     'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
-    'RCTText',
     'RCTNetwork',
     'RCTWebSocket', # needed for debugging
     # Add any other subspecs you want to use in your project

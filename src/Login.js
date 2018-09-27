@@ -10,6 +10,7 @@ import {
   TouchableOpacity
 } from "react-native";
 import { StackActions, NavigationActions } from "react-navigation";
+import firebase from "react-native-firebase";
 const { width, height } = Dimensions.get("window");
 
 const background = require("./Img/login1_bg.png");
@@ -18,6 +19,55 @@ const lockIcon = require("./Img/login1_lock.png");
 const personIcon = require("./Img/login1_person.png");
 
 class Login extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      Email: "",
+      Password: "",
+      error: "",
+      loading: false
+    };
+  }
+  authentication() {
+    console.log("authentication");
+    console.log(this.state.Email);
+    console.log(this.state.Password);
+    firebase
+      .auth()
+      .signInAndRetrieveDataWithEmailAndPassword(
+        this.state.Email,
+        this.state.Password
+      )
+      .then(this.onLoginSuccess.bind(this))
+      .catch(this.onLoginFailure.bind(this));
+  }
+  onLoginSuccess() {
+    const resetAction = StackActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({
+          routeName: "Navigation"
+        })
+      ]
+    });
+    console.log("success");
+    if (firebase.auth()._user) {
+      this.setState({
+        Email: "",
+        Password: "",
+        loading: false,
+        error: ""
+      });
+      this.props.navigation.dispatch(resetAction);
+    }
+  }
+  onLoginFailure() {
+    console.log("onloginfailure");
+    this.setState({
+      error: "Authentication failed: Invalid Email or Password",
+      loading: false
+    });
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -43,9 +93,11 @@ class Login extends Component {
                 />
               </View>
               <TextInput
-                placeholder="Username"
+                placeholder="Email or Username"
                 placeholderTextColor="#FFF"
                 style={[styles.input, styles.whiteFont]}
+                onChangeText={Email => this.setState({ Email })}
+                value={this.state.Email}
               />
             </View>
             <View style={styles.inputWrap}>
@@ -60,6 +112,8 @@ class Login extends Component {
                 placeholderTextColor="#FFF"
                 placeholder="Password"
                 style={[styles.input, styles.whiteFont]}
+                onChangeText={Password => this.setState({ Password })}
+                value={this.state.Password}
                 secureTextEntry
               />
             </View>
@@ -70,23 +124,16 @@ class Login extends Component {
             </TouchableOpacity>
             <TouchableOpacity
               activeOpacity={0.5}
-              onPress={() => {
+              onPress={
                 //this.props.navigation.navigate("Navigation");
-                const resetAction = StackActions.reset({
-                  index: 0,
-                  actions: [
-                    NavigationActions.navigate({
-                      routeName: "Navigation"
-                    })
-                  ]
-                });
-                this.props.navigation.dispatch(resetAction);
-              }}
+                this.authentication.bind(this)
+              }
             >
               <View style={styles.button}>
                 <Text style={styles.buttonText}>Sign In</Text>
               </View>
             </TouchableOpacity>
+            <Text style={styles.errorTextStyle}>{this.state.error}</Text>
           </View>
           <View style={styles.container}>
             <View style={styles.signupWrap}>
@@ -179,6 +226,11 @@ const styles = StyleSheet.create({
   },
   whiteFont: {
     color: "#FFF"
+  },
+  errorTextStyle: {
+    fontSize: 20,
+    alignSelf: "center",
+    color: "red"
   }
 });
 

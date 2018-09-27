@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Platform } from "react-native";
-import Header from "./Components/Header";
 
 import Login from "./Login";
 import SignUp from "./SignUp";

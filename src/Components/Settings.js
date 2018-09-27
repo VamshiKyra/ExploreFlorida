@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
+import firebase from "react-native-firebase";
 import Icon from "react-native-vector-icons/Ionicons";
 class Settings extends Component {
   static navigationOptions = {
@@ -10,14 +11,15 @@ class Settings extends Component {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <Text>Settings!</Text>
-        <Button
+        {/* <Button
           title="Go to Home"
           onPress={() => this.props.navigation.navigate("Explore")}
         />
         <Button
           title="Go to Details"
           onPress={() => this.props.navigation.navigate("Details")}
-        />
+        /> */}
+        <Button title="Sign Out" onPress={() => firebase.auth().signOut()} />
       </View>
     );
   }

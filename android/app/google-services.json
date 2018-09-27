@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "842732630309",
+    "firebase_url": "https://exploreflorida-216721.firebaseio.com",
+    "project_id": "exploreflorida-216721",
+    "storage_bucket": "exploreflorida-216721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842732630309:android:32709d51b8626bfb",
+        "android_client_info": {
+          "package_name": "com.exploreflorida"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842732630309-8e3v7iactiundbq0q207s57mlnmilqbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqH7bn9ilA-mq8IaJhEaDbCC6xihYvgq4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
