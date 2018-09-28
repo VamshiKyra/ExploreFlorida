@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { View, Text } from "react-native";
 import Icon from "react-native-vector-icons/Entypo";
 import SearchIcon from "react-native-vector-icons/Ionicons";
-import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 class Favorities extends Component {
   state = {
     favorities: []

@@ -18,7 +18,6 @@ import {
 } from "react-native";
 import Geojson from "react-native-geojson";
 import { StackActions, NavigationActions } from "react-navigation";
-import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import axios from "axios";
 import Details from "./Details";
 import { green } from "../../node_modules/ansi-colors";
